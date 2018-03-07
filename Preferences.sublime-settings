@@ -1,0 +1,23 @@
+{
+	"auto_complete_commit_on_tab": true,
+	"auto_complete_cycle": true,
+	"auto_complete_with_fields": true,
+	"auto_find_in_selection": true,
+	"caret_extra_bottom": 0,
+	"caret_extra_top": 0,
+	"enable_tab_scrolling": false,
+	"font_face": "Source Code Pro",
+	"font_size": 11,
+	"highlight_modified_tabs": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"margin": 0,
+	"shift_tab_unindent": true,
+	"show_encoding": true,
+	"show_full_path": false,
+	"show_line_endings": true,
+	"theme": "Soda Dark 3.sublime-theme",
+	"translate_tabs_to_spaces": true
+}
