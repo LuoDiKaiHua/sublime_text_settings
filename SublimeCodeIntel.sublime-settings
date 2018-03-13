@@ -1,0 +1,20 @@
+{
+    "codeintel_language_settings":
+    {
+        "Python3":
+        {
+            "python3": "/usr/local/bin/python3.3",
+            "codeintel_scan_extra_dir": [
+                "D:\\Python\\DLLs",
+                "D:\\Python\\Lib",
+                "D:\\Python\\Lib\\site-packages",
+                "D:\\Python\\Lib\\idlelib",
+                "D:\\Python\\python36.zip",
+                "D:\\Python",
+                "D:\\Python\\Lib\\*",
+            ],
+            "codeintel_scan_files_in_project": true,
+            "codeintel_selected_catalogs": []
+        }
+    }
+}

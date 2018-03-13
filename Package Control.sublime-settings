@@ -11,11 +11,12 @@
 		"Emmet",
 		"Git",
 		"GitGutter",
+		"HexViewer",
 		"HTML-CSS-JS Prettify",
 		"Package Control",
+		"SublimeCodeIntel",
 		"SublimeTmpl",
 		"Terminal",
-		"HexViewer",
 		"Theme - Soda"
 	]
 }
