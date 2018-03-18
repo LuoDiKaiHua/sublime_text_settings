@@ -2,6 +2,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"SublimeCodeIntel"
 	],
 	"installed_packages":
 	[
@@ -15,7 +16,6 @@
 		"HTML-CSS-JS Prettify",
 		"Markdown Preview",
 		"Package Control",
-		"SublimeCodeIntel",
 		"SublimeTmpl",
 		"Terminal",
 		"Theme - Soda"
