@@ -2,10 +2,10 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"SublimeCodeIntel"
 	],
 	"installed_packages":
 	[
+		"AutoFileName",
 		"BracketHighlighter",
 		"ConvertToUTF8",
 		"EditorConfig",
