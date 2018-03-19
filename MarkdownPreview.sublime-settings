@@ -2,5 +2,7 @@
     "enable_mathjax": true,
     "enable_uml": true,
     "enable_highlight": true,
-    "enable_autoreload": true
+    "enable_autoreload": true,
+    "enabled_parsers": ["markdown"],
+    "css": ["C:\\Users\\Yifan\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\github-markdown.css"]
 }
