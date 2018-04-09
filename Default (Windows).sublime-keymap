@@ -1,4 +1,9 @@
-[{
+[
+{
     "keys": ["alt+m"],
     "command": "markdown_preview_select"
+},
+{
+    "keys": ["ctrl+alt+i"],
+    "command": "android_import"
 }]
