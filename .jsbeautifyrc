@@ -1,14 +1,9 @@
 {
   "all": {
-    "indent_size": 2
+    "indent_size": 2,
+    "end_with_newline": true
   },
   "json": {
-    // Rules added here apply only to JSON files. They take precedence over all
-    // of the settings in the 'all' category above.
-
-    // You can add other .jsbeautifyrc rules in this section too.
-
-    // [collapse|collapse-preserve-inline|expand|end-expand|none] Put braces on the same line as control statements (default), or put braces on own line (Allman / ANSI style), or put end braces on own line, or attempt to keep them where they are
     "brace_style": "collapse"
   }
 }

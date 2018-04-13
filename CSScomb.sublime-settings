@@ -2,51 +2,25 @@
     "node-path": "D:/Nodejs/node_modules/npm/bin",
     "config":
     {
-        // Whether to add a semicolon after the last value/mixin.
-        "always-semicolon": true,
-        // Set indent for code inside blocks, including media queries and nested rules.
-        "block-indent": 2,
-        // Unify case of hexadecimal colors.
-        "color-case": "lower",
-        // Whether to expand hexadecimal colors or use shorthands.
-        "color-shorthand": true,
-        // Unify case of element selectors.
-        "element-case": "lower",
-        // Add/remove line break at EOF.
-        "eof-newline": true,
-        // Add/remove leading zero in dimensions.
-        "leading-zero": false,
-        // Unify quotes style.
-        "quotes": "double",
-        // Remove all rulesets that contain nothing but spaces.
         "remove-empty-rulesets": false,
-        // Set space after `:` in declarations.
-        "space-after-colon": 1,
-        // Set space after combinator (for example, in selectors like `p > a`).
-        "space-after-combinator": 1,
-        // Set space after `{`.
-        "space-after-opening-brace": "\n",
-        // Set space after selector delimiter.
-        "space-after-selector-delimiter": "\n",
-        // Set space before `}`.
-        "space-before-closing-brace": "\n",
-        // Set space before `:` in declarations.
+        "always-semicolon": true,
+        "block-indent": "  ",
+        "eof-newline": true,
+        "quotes": "double",
+        "sort-order-fallback": "abc",
         "space-before-colon": "",
-        // Set space before combinator (for example, in selectors like `p > a`).
-        "space-before-combinator": 1,
-        // Set space before `{`.
-        "space-before-opening-brace": 1,
-        // Set space before selector delimiter.
-        "space-before-selector-delimiter": 0,
-        // Set space between declarations (i.e. `color: tomato`).
+        "space-after-colon": " ",
+        "space-before-combinator": " ",
+        "space-after-combinator": " ",
         "space-between-declarations": "\n",
-        // Whether to trim trailing spaces.
+        "space-before-opening-brace": " ",
+        "space-after-opening-brace": "\n",
+        "space-after-selector-delimiter": "\n",
+        "space-before-selector-delimiter": "",
+        "space-before-closing-brace": "\n",
         "strip-spaces": true,
-        // Whether to remove units in zero-valued dimensions.
-        "unitless-zero": true,
-        // Whether to align prefixes in properties and values.
-        "vendor-prefix-align": true,
-        // Sort properties in particular order.
+        "tab-size": true,
+        "unitless-zero": false,
         "sort-order": [
             [
                 "font",
