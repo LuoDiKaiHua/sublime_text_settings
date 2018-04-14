@@ -6,4 +6,12 @@
 {
     "keys": ["ctrl+alt+i"],
     "command": "android_import"
+},
+{
+    "keys": ["ctrl+alt+left"],
+    "command": "jump_back"
+},
+{
+    "keys": ["ctrl+alt+right"],
+    "command": "jump_forward"
 }]
