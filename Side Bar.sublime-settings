@@ -1,0 +1,10 @@
+{
+    "new_files_relative_to_project_root": true,
+    "new_folders_relative_to_project_root": true,
+    "confirm_before_deleting": false,
+    "statusbar_file_size": true,
+    "open_all_browsers": ["chrome", "ie", "edge"],
+    "disable_send_to_trash": true,
+    "use_powershell": false,
+    "i_donated_to_sidebar_enhancements_developer": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DD4SL2AHYJGBW"
+}
