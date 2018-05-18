@@ -2,6 +2,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"Markdown Preview"
 	],
 	"installed_packages":
 	[
@@ -19,12 +20,12 @@
 		"HexViewer",
 		"HTML-CSS-JS Prettify",
 		"LiveReload",
-		"Markdown Preview",
 		"Package Control",
 		"SideBarEnhancements",
 		"SublimeTmpl",
 		"Terminal",
 		"Theme - Soda",
-		"TypeScript"
+		"TypeScript",
+		"MarkdownPreview"
 	]
 }
