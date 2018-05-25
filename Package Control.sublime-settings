@@ -2,10 +2,10 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
-		"Markdown Preview"
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"AndroidImport",
 		"AutoFileName",
 		"BracketHighlighter",
@@ -20,12 +20,12 @@
 		"HexViewer",
 		"HTML-CSS-JS Prettify",
 		"LiveReload",
+		"MarkdownPreview",
 		"Package Control",
 		"SideBarEnhancements",
 		"SublimeTmpl",
 		"Terminal",
 		"Theme - Soda",
-		"TypeScript",
-		"MarkdownPreview"
+		"TypeScript"
 	]
 }
