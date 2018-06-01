@@ -13,7 +13,6 @@
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"LiveReload",
 		"Vintage"
 	],
 	"margin": 0,
