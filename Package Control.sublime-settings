@@ -2,12 +2,12 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"LiveReload"
 	],
 	"installed_packages":
 	[
 		"A File Icon",
 		"AndroidImport",
-		"AutoFileName",
 		"BracketHighlighter",
 		"CMake",
 		"ConvertToUTF8",
@@ -19,7 +19,6 @@
 		"GitGutter",
 		"HexViewer",
 		"HTML-CSS-JS Prettify",
-		"LiveReload",
 		"MarkdownPreview",
 		"Package Control",
 		"SideBarEnhancements",
