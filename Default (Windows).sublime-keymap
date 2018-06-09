@@ -4,7 +4,7 @@
     "command": "markdown_preview_select"
 },
 {
-    "keys": ["ctrl+alt+i"],
+    "keys": ["ctrl+alt+o"],
     "command": "android_import"
 },
 {
