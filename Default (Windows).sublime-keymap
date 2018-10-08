@@ -14,4 +14,8 @@
 {
     "keys": ["ctrl+alt+right"],
     "command": "jump_forward"
+},
+{
+    "keys": ["ctrl+alt+l"],
+    "command": "reindent"
 }]
