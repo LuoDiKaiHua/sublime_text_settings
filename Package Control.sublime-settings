@@ -2,6 +2,7 @@
 	"bootstrapped": true,
 	"in_process_packages":
 	[
+		"TypeScript"
 	],
 	"installed_packages":
 	[
@@ -9,18 +10,16 @@
 		"BracketHighlighter",
 		"CMake",
 		"ConvertToUTF8",
-		"CSScomb",
 		"DocBlockr",
 		"EditorConfig",
 		"Emmet",
 		"Git",
 		"GitGutter",
-		"HexViewer",
 		"HTML-CSS-JS Prettify",
 		"MarkdownPreview",
 		"Package Control",
 		"Terminal",
-		"Theme - Soda",
-		"TypeScript"
+		"Text Pastry",
+		"Theme - Soda"
 	]
 }
