@@ -5,16 +5,15 @@
 	"auto_find_in_selection": true,
 	"caret_extra_bottom": 0,
 	"caret_extra_top": 0,
-	"color_scheme": "Monokai.sublime-color-scheme",
+	"color_scheme": "Packages/Color Scheme - Default/Breakers.sublime-color-scheme",
 	"enable_tab_scrolling": false,
 	"enable_typescript_language_service": false,
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Source Code Pro",
-	"font_size": 10,
+	"font_size": 11,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
-		"TypeScript",
 		"Vintage"
 	],
 	"margin": 0,
@@ -22,6 +21,6 @@
 	"show_encoding": true,
 	"show_full_path": false,
 	"show_line_endings": true,
-	"theme": "Soda Dark 3.sublime-theme",
+	"theme": "Soda Light 3.sublime-theme",
 	"translate_tabs_to_spaces": true
 }
