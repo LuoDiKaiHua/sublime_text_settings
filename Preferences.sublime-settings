@@ -22,6 +22,5 @@
 	"show_full_path": false,
 	"show_line_endings": true,
 	"theme": "Soda Dark 3.sublime-theme",
-	"translate_tabs_to_spaces": true,
-	"fallback_encoding": "UTF-8"
+	"translate_tabs_to_spaces": true
 }
