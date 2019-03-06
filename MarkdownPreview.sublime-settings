@@ -3,6 +3,5 @@
     "enable_uml": true,
     "enable_highlight": true,
     "enable_autoreload": true,
-    "enabled_parsers": ["markdown"],
-    "css": ["C:\\Users\\Yifan\\AppData\\Roaming\\Sublime Text 3\\Packages\\User\\markdown.css"]
+    "enabled_parsers": ["markdown"]
 }
