@@ -5,7 +5,6 @@
 	],
 	"installed_packages":
 	[
-		"AndroidImport",
 		"BracketHighlighter",
 		"CMake",
 		"DocBlockr",
