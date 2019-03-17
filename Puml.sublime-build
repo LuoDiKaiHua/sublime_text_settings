@@ -1,0 +1,5 @@
+{
+    "shell_cmd": "puml generate $file -p -C utf8 -o $file_base_name.png",
+    "selector": "source.puml",
+    "file_patterns": ["*.puml"]
+}
