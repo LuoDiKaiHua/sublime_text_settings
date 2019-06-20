@@ -3,5 +3,7 @@
     "enable_uml": true,
     "enable_highlight": true,
     "enable_autoreload": true,
-    "enabled_parsers": ["markdown"]
+    "enabled_parsers": ["markdown"],
+    "github_inject_header_ids": true,
+    "image_path_conversion": "base64"
 }
