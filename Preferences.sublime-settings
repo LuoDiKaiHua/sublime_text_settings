@@ -12,11 +12,12 @@
 	"font_face": "Source Code Pro",
 	"font_size": 10,
 	"highlight_modified_tabs": true,
-	"ignored_packages": [
+	"ignored_packages":
+	[
 		"Vintage"
 	],
-	"line_padding_top": 1,
 	"line_padding_bottom": 1,
+	"line_padding_top": 1,
 	"margin": 0,
 	"shift_tab_unindent": true,
 	"show_encoding": true,
