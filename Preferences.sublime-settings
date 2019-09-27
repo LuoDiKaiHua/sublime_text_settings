@@ -20,7 +20,6 @@
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"margin": 0,
-	"match_brackets_angle": true,
 	"shift_tab_unindent": true,
 	"show_encoding": true,
 	"show_full_path": false,
