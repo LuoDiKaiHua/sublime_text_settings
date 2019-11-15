@@ -1,0 +1,7 @@
+{
+    "auto_open" : true,
+    "bytes_per_line" : 16,
+    "use_lowercase_hex": false,
+    "prompt_on_file_too_big": true,
+    "auto_open_patterns" : ["*.bin", "*.pyc", "*.class"]
+}
