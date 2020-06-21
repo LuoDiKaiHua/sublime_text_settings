@@ -1,3 +1,4 @@
 {
-    "terminal": "cmd",
+    "terminal": "wt",
+    "parameters": ["-d", "."]
 }
