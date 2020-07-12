@@ -1,9 +1,5 @@
 {
-    "enable_mathjax": true,
-    "enable_uml": true,
-    "enable_highlight": true,
-    "enable_autoreload": true,
-    "enabled_parsers": ["markdown"],
-    "github_inject_header_ids": true,
-    "image_path_conversion": "base64"
+    "parser": "default",
+    "image_path_conversion": "base64",
+    "enabled_parsers": ["markdown"]
 }
