@@ -1,4 +1,5 @@
 {
+	"atomic_save": "true",
 	"auto_complete_commit_on_tab": true,
 	"auto_complete_cycle": true,
 	"auto_complete_with_fields": true,
@@ -6,6 +7,7 @@
 	"caret_extra_bottom": 0,
 	"caret_extra_top": 0,
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
+	"draw_minimap_border": true,
 	"enable_tab_scrolling": false,
 	"enable_typescript_language_service": false,
 	"ensure_newline_at_eof_on_save": true,
@@ -13,10 +15,7 @@
 	"font_size": 10,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
-	"ignored_packages":
-	[
-		"Vintage"
-	],
+	"indent_to_bracket": true,
 	"line_padding_bottom": 1,
 	"line_padding_top": 1,
 	"margin": 0,
