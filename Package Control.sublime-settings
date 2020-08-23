@@ -21,6 +21,7 @@
 		"Protobuf Syntax Hightlighting",
 		"SublimeLinter",
 		"SublimeLinter-annotations",
+		"SublimeLinter-flake8",
 		"Super Calculator",
 		"Terminal",
 		"Text Pastry",
