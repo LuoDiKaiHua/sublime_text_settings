@@ -18,4 +18,8 @@
 {
     "keys": ["ctrl+alt+l"],
     "command": "reindent"
+},
+{
+    "keys": ["ctrl+shift+o"],
+    "command": "prompt_select_workspace"
 }]
