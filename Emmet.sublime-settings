@@ -1,3 +1,5 @@
 {
-    "disabled_keymap_actions": "increment_number_by_1, decrement_number_by_1"
+	"disabled_keymap_actions": "increment_number_by_1, decrement_number_by_1",
+	"telemetry": false,
+	"uid": "14f67080-43a7-4fc1-b742-d2e32735fd8d"
 }
