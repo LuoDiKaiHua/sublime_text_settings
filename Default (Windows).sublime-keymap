@@ -4,10 +4,6 @@
     "command": "markdown_preview_select"
 },
 {
-    "keys": ["ctrl+alt+o"],
-    "command": "android_import"
-},
-{
     "keys": ["ctrl+alt+left"],
     "command": "jump_back"
 },
