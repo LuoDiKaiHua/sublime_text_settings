@@ -1,6 +1,7 @@
 {
 	"bootstrapped": true,
-	"channels": [
+	"channels":
+	[
 		"http://cst.stu.126.net/u/json/cms/channel_v3.json"
 	],
 	"in_process_packages":
@@ -17,6 +18,7 @@
 		"GitGutter",
 		"HexViewer",
 		"HTML-CSS-JS Prettify",
+		"Http Requester",
 		"Kotlin",
 		"MarkdownPreview",
 		"Package Control",
