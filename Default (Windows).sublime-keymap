@@ -13,4 +13,14 @@
 }, {
     "keys": ["ctrl+shift+o"],
     "command": "prompt_select_workspace"
+}, { "keys": ["*"], "command": "insert_snippet", "args": {"contents": "*${0:$SELECTION}*"}, "context":
+    [
+        { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+        { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+    ]
+}, { "keys": ["`"], "command": "insert_snippet", "args": {"contents": "`${0:$SELECTION}`"}, "context":
+    [
+        { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+        { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true }
+    ]
 }]
