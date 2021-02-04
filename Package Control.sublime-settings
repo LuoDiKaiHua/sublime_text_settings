@@ -8,6 +8,7 @@
 		"BracketHighlighter",
 		"CMake",
 		"ConvertToUTF8",
+		"DocBlockr",
 		"EditorConfig",
 		"Emmet",
 		"GitGutter",
