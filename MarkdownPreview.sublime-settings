@@ -1,5 +1,8 @@
 {
     "parser": "default",
     "image_path_conversion": "base64",
-    "enabled_parsers": ["markdown"]
+    "enabled_parsers": ["markdown"],
+    "css": {
+        "markdown": ["default", "res://User/css/github-markdown.css"]
+    }
 }

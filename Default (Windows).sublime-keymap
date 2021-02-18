@@ -1,6 +1,6 @@
 [{
     "keys": ["alt+m"],
-    "command": "markdown_preview_select"
+    "command": "markdown_preview"
 }, {
     "keys": ["ctrl+alt+left"],
     "command": "jump_back"
