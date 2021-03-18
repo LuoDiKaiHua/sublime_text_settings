@@ -17,7 +17,7 @@
 		"directwrite"
 	],
 	"font_size": 10.5,
-	"highlight_line": true,
+	"highlight_line": false,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
 	[
