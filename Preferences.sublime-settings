@@ -11,12 +11,12 @@
 	"enable_tab_scrolling": false,
 	"enable_typescript_language_service": false,
 	"ensure_newline_at_eof_on_save": true,
-	"font_face": "Droid Sans Mono",
+	"font_face": "Source Code Pro",
 	"font_options":
 	[
 		"directwrite"
 	],
-	"font_size": 11,
+	"font_size": 10.5,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
 	"ignored_packages":
