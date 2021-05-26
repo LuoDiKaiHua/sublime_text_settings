@@ -19,9 +19,11 @@
 	"font_size": 11,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
+	"hardware_acceleration": "opengl",
+	"hide_new_tab_button": true,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
 	],
 	"indent_guide_options":
 	[
@@ -38,10 +40,11 @@
 	"show_encoding": true,
 	"show_full_path": false,
 	"show_line_endings": true,
-	"theme": "Soda Dark 3.sublime-theme",
+	"show_tab_close_buttons": false,
+	"theme": "Default Dark.sublime-theme",
 	"theme_font_options":
 	[
 		"directwrite"
 	],
-	"translate_tabs_to_spaces": true
+	"translate_tabs_to_spaces": true,
 }
