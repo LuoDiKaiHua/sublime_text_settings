@@ -9,7 +9,6 @@
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
 	"draw_minimap_border": false,
 	"enable_tab_scrolling": false,
-	"enable_typescript_language_service": false,
 	"ensure_newline_at_eof_on_save": true,
 	"font_face": "Source Code Pro",
 	"font_options":
