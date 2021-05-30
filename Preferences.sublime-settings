@@ -6,6 +6,7 @@
 	"auto_find_in_selection": true,
 	"caret_extra_bottom": 0,
 	"caret_extra_top": 0,
+	"caret_style": "blink",
 	"color_scheme": "Packages/Color Scheme - Default/Monokai.sublime-color-scheme",
 	"draw_minimap_border": false,
 	"enable_tab_scrolling": false,
