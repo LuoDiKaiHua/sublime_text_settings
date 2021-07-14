@@ -39,6 +39,7 @@
 	"shift_tab_unindent": true,
 	"show_encoding": true,
 	"show_full_path": false,
+	"show_rel_path": true,
 	"show_line_endings": true,
 	"show_tab_close_buttons": false,
 	"theme": "Default Dark.sublime-theme",
