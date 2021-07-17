@@ -42,7 +42,7 @@
 	"show_rel_path": true,
 	"show_line_endings": true,
 	"show_tab_close_buttons": false,
-	"theme": "Default Dark.sublime-theme",
+	"theme": "Adaptive.sublime-theme",
 	"theme_font_options":
 	[
 		"directwrite"
