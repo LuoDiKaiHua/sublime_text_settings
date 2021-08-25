@@ -1,9 +1,0 @@
-{
-  "all": {
-    "indent_size": 2,
-    "end_with_newline": true
-  },
-  "json": {
-    "brace_style": "collapse"
-  }
-}
