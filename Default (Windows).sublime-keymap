@@ -61,4 +61,8 @@
     "args": {
         "amount": -1.0
     }
+}, {
+    "keys": ["ctrl+shift+g"],
+    "command": "emmet_wrap_with_abbreviation",
+    "context": [{"key": "setting.is_widget",  "operand": false }]
 }]
