@@ -29,6 +29,8 @@
 		"draw_normal",
 		"draw_active"
 	],
+	"line_padding_top": 1,
+	"line_padding_bottom": 1,
 	"margin": 0,
 	"match_brackets_angle": true,
 	"mini_diff": "auto",
