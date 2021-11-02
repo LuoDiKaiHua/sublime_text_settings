@@ -62,7 +62,9 @@
         "amount": -1.0
     }
 }, {
-    "keys": ["ctrl+shift+g"],
-    "command": "emmet_wrap_with_abbreviation",
-    "context": [{"key": "setting.is_widget",  "operand": false }]
+    "keys": ["ctrl+e"],
+    "command": "emmet_expand_abbreviation"
+}, {
+    "keys": ["ctrl+."],
+    "command": "emmet_enter_abbreviation"
 }]
