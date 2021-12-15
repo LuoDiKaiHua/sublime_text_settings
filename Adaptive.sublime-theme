@@ -1,0 +1,14 @@
+// Documentation at https://www.sublimetext.com/docs/themes.html
+{
+    "variables":
+    {
+    },
+    "rules":
+    [
+        {
+            "class": "text_line_control",
+            "font.size": "var(font_size_lg)",
+            "content_margin": [4, 2, 4, 2]
+        }
+    ]
+}
