@@ -1,70 +1,121 @@
-[{
-    "keys": ["alt+m"],
-    "command": "markdown_preview"
-}, {
-    "keys": ["ctrl+alt+left"],
-    "command": "jump_back"
-}, {
-    "keys": ["ctrl+alt+right"],
-    "command": "jump_forward"
-}, {
-    "keys": ["ctrl+alt+l"],
-    "command": "reindent"
-}, {
-    "keys": ["ctrl+shift+o"],
-    "command": "prompt_select_workspace"
-}, {
-    "keys": ["*"],
-    "command": "insert_snippet",
-    "args": {
-        "contents": "*${0:$SELECTION}*"
+[
+    {
+        "keys": [
+            "alt+m"
+        ],
+        "command": "markdown_preview"
     },
-    "context": [{
-            "key": "setting.auto_match_enabled",
-            "operator": "equal",
-            "operand": true
-        },
-        {
-            "key": "selection_empty",
-            "operator": "equal",
-            "operand": false,
-            "match_all": true
-        }
-    ]
-}, {
-    "keys": ["`"],
-    "command": "insert_snippet",
-    "args": {
-        "contents": "`${0:$SELECTION}`"
+    {
+        "keys": [
+            "ctrl+alt+left"
+        ],
+        "command": "jump_back"
     },
-    "context": [{
-            "key": "setting.auto_match_enabled",
-            "operator": "equal",
-            "operand": true
+    {
+        "keys": [
+            "ctrl+alt+right"
+        ],
+        "command": "jump_forward"
+    },
+    {
+        "keys": [
+            "ctrl+alt+l"
+        ],
+        "command": "reindent"
+    },
+    {
+        "keys": [
+            "ctrl+shift+o"
+        ],
+        "command": "prompt_select_workspace"
+    },
+    {
+        "keys": [
+            "*"
+        ],
+        "command": "insert_snippet",
+        "args": {
+            "contents": "*${0:$SELECTION}*"
         },
-        {
-            "key": "selection_empty",
-            "operator": "equal",
-            "operand": false,
-            "match_all": true
+        "context": [
+            {
+                "key": "setting.auto_match_enabled",
+                "operator": "equal",
+                "operand": true
+            },
+            {
+                "key": "selection_empty",
+                "operator": "equal",
+                "operand": false,
+                "match_all": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "`"
+        ],
+        "command": "insert_snippet",
+        "args": {
+            "contents": "`${0:$SELECTION}`"
+        },
+        "context": [
+            {
+                "key": "setting.auto_match_enabled",
+                "operator": "equal",
+                "operand": true
+            },
+            {
+                "key": "selection_empty",
+                "operator": "equal",
+                "operand": false,
+                "match_all": true
+            }
+        ]
+    },
+    {
+        "keys": [
+            "ctrl+up"
+        ],
+        "command": "scroll_lines",
+        "args": {
+            "amount": 1.0
         }
-    ]
-}, {
-    "keys": ["ctrl+up"],
-    "command": "scroll_lines",
-    "args": {
-        "amount": 1.0
+    },
+    {
+        "keys": [
+            "ctrl+down"
+        ],
+        "command": "scroll_lines",
+        "args": {
+            "amount": -1.0
+        }
+    },
+    {
+        "keys": [
+            "ctrl+e"
+        ],
+        "command": "emmet_expand_abbreviation"
+    },
+    {
+        "keys": [
+            "ctrl+."
+        ],
+        "command": "emmet_enter_abbreviation"
+    },
+    {
+        "keys": [
+            "ctrl+alt+t"
+        ],
+        "command": "terminus_open",
+        "args": {
+            "cwd": "${file_path:${folder}}"
+        }
+    },
+    {
+        "keys": [
+            "alt+f12"
+        ],
+        "command": "toggle_terminus_panel"
     }
-}, {
-    "keys": ["ctrl+down"],
-    "command": "scroll_lines",
-    "args": {
-        "amount": -1.0
-    }
-}, {
-    "keys": ["ctrl+e"],
-    "command": "emmet_expand_abbreviation"
-}, {
-    "keys": ["ctrl+."],
-    "command": "emmet_enter_abbreviation"
-}]
+]
