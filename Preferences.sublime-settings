@@ -13,7 +13,8 @@
 	"font_face": "Source Code Pro",
 	"font_options":
 	[
-		"directwrite"
+		"directwrite",
+		"no_italic"
 	],
 	"font_size": 18,
 	"highlight_line": false,
