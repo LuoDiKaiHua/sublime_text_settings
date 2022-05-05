@@ -20,7 +20,7 @@
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
 	"hardware_acceleration": "opengl",
-	"hide_new_tab_button": false,
+	"hide_new_tab_button": true,
 	"ignored_packages":
 	[
 		"Vintage",
@@ -38,7 +38,6 @@
 	"rulers": [],
 	"shift_tab_unindent": true,
 	"show_encoding": true,
-	"show_full_path": false,
 	"show_rel_path": true,
 	"show_line_endings": true,
 	"show_tab_close_buttons": false,
