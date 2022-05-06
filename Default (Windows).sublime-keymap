@@ -48,6 +48,18 @@
                 "operator": "equal",
                 "operand": false,
                 "match_all": true
+            },
+            {
+                "key": "selector",
+                "operator": "equal",
+                "operand": "text.html.markdown",
+                "match_all": true
+            },
+            {
+                "key": "selector",
+                "operator": "not_equal",
+                "operand": "markup.raw",
+                "match_all": true
             }
         ]
     },
@@ -69,6 +81,18 @@
                 "key": "selection_empty",
                 "operator": "equal",
                 "operand": false,
+                "match_all": true
+            },
+            {
+                "key": "selector",
+                "operator": "equal",
+                "operand": "text.html.markdown",
+                "match_all": true
+            },
+            {
+                "key": "selector",
+                "operator": "not_equal",
+                "operand": "markup.raw",
                 "match_all": true
             }
         ]
