@@ -18,6 +18,7 @@
 		"LSP",
 		"LSP-bash",
 		"LSP-json",
+		"LSP-lua",
 		"LSP-pyright",
 		"LSP-typescript",
 		"MarkdownPreview",
