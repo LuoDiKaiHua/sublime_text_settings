@@ -19,6 +19,7 @@
 		"LSP-bash",
 		"LSP-json",
 		"LSP-lua",
+		"LSP-PowerShellEditorServices",
 		"LSP-pyright",
 		"LSP-typescript",
 		"MarkdownPreview",
