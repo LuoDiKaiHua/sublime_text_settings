@@ -17,6 +17,7 @@
 		"LiveReload",
 		"LSP",
 		"LSP-bash",
+		"LSP-cmake",
 		"LSP-json",
 		"LSP-lua",
 		"LSP-PowerShellEditorServices",
@@ -31,5 +32,9 @@
 		"Terminal",
 		"Terminus",
 		"Text Pastry",
+	],
+	"repositories":
+	[
+		"https://github.com/sublimelsp/LSP-cmake"
 	],
 }
