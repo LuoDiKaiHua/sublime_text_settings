@@ -47,4 +47,5 @@
 		"directwrite"
 	],
 	"translate_tabs_to_spaces": true,
+	"word_wrap": false,
 }
