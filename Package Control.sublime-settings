@@ -23,6 +23,7 @@
 		"LSP-PowerShellEditorServices",
 		"LSP-pyright",
 		"LSP-typescript",
+		"LSP-yaml",
 		"MarkdownPreview",
 		"Package Control",
 		"PowerShell",

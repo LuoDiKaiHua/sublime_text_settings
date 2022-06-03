@@ -1,0 +1,13 @@
+// Settings in here override those in "LSP-json/LSP-json.sublime-settings"
+{
+    "settings": {
+        "userSchemas": [
+            {
+                "fileMatch": [
+                    "docker-compose.yml"
+                ],
+                "uri": "https://raw.githubusercontent.com/docker/compose/master/compose/config/compose_spec.json"
+            }
+        ]
+    }
+}
