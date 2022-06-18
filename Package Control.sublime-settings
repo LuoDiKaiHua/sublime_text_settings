@@ -21,6 +21,7 @@
 		"LSP-json",
 		"LSP-lua",
 		"LSP-PowerShellEditorServices",
+		"LSP-pylsp",
 		"LSP-pyright",
 		"LSP-typescript",
 		"LSP-yaml",
