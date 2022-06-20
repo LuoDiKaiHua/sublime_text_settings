@@ -141,5 +141,37 @@
             "alt+f12"
         ],
         "command": "toggle_terminus_panel"
+    },
+    {
+        "keys": [
+            "shift+alt+f"
+        ],
+        "command": "lsp_format_document_range",
+        "context": [
+            {
+                "key": "selection_empty",
+                "operator": "equal",
+                "operand": false,
+            }
+        ]
+    },
+    {
+        "keys": [
+            "shift+alt+f"
+        ],
+        "command": "lsp_format_document",
+        "context": [
+            {
+                "key": "selection_empty",
+                "operator": "equal",
+                "operand": true,
+            }
+        ]
+    },
+    {
+        "keys": [
+            "alt+shift+r"
+        ],
+        "command": "lsp_symbol_rename"
     }
 ]
