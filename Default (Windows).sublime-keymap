@@ -65,6 +65,12 @@
     },
     {
         "keys": [
+            "ctrl+alt+o"
+        ],
+        "command": "prompt_open_project"
+    },
+    {
+        "keys": [
             "`"
         ],
         "command": "insert_snippet",
