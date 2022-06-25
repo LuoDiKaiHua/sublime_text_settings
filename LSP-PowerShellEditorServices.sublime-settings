@@ -1,0 +1,9 @@
+// Settings in here override those in "LSP-PowerShellEditorServices/LSP-PowerShellEditorServices.sublime-settings"
+
+{
+    "settings": {
+        "powershell.codeFormatting.autoCorrectAliases": true,
+        "powershell.codeFormatting.newLineAfterCloseBrace": false,
+        "powershell.codeFormatting.preset": "OTBS",
+    }
+}
