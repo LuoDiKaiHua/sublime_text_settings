@@ -7,25 +7,25 @@
     },
     {
         "keys": [
-            "ctrl+alt+left"
+            "primary+alt+left"
         ],
         "command": "jump_back"
     },
     {
         "keys": [
-            "ctrl+alt+right"
+            "primary+alt+right"
         ],
         "command": "jump_forward"
     },
     {
         "keys": [
-            "ctrl+alt+l"
+            "primary+alt+l"
         ],
         "command": "reindent"
     },
     {
         "keys": [
-            "ctrl+shift+o"
+            "primary+shift+o"
         ],
         "command": "prompt_select_workspace"
     },
@@ -99,7 +99,7 @@
     },
     {
         "keys": [
-            "ctrl+up"
+            "primary+up"
         ],
         "command": "scroll_lines",
         "args": {
@@ -108,7 +108,7 @@
     },
     {
         "keys": [
-            "ctrl+down"
+            "primary+down"
         ],
         "command": "scroll_lines",
         "args": {
@@ -117,19 +117,19 @@
     },
     {
         "keys": [
-            "ctrl+e"
+            "primary+e"
         ],
         "command": "emmet_expand_abbreviation"
     },
     {
         "keys": [
-            "ctrl+."
+            "primary+."
         ],
         "command": "emmet_enter_abbreviation"
     },
     {
         "keys": [
-            "ctrl+alt+t"
+            "primary+alt+t"
         ],
         "command": "terminus_open",
         "args": {
@@ -152,6 +152,11 @@
                 "key": "selection_empty",
                 "operator": "equal",
                 "operand": false,
+            },
+            {
+                "key": "lsp.session_with_capability",
+                "operator": "equal",
+                "operand": "documentRangeFormattingProvider"
             }
         ]
     },
@@ -165,13 +170,87 @@
                 "key": "selection_empty",
                 "operator": "equal",
                 "operand": true,
+            },
+            {
+                "key": "lsp.session_with_capability",
+                "operator": "equal",
+                "operand": "documentFormattingProvider | documentRangeFormattingProvider"
             }
         ]
     },
     {
         "keys": [
-            "alt+shift+r"
+            "shift+alt+r"
         ],
-        "command": "lsp_symbol_rename"
-    }
+        "command": "lsp_symbol_rename",
+        "context": [
+            {
+                "key": "lsp.session_with_capability",
+                "operator": "equal",
+                "operand": "renameProvider"
+            }
+        ]
+    },
+    {
+        "keys": [
+            "f12"
+        ],
+        "command": "lsp_symbol_definition",
+        "args": {
+            "side_by_side": false
+        },
+        "context": [
+            {
+                "key": "lsp.session_with_capability",
+                "operator": "equal",
+                "operand": "definitionProvider"
+            },
+            {
+                "key": "auto_complete_visible",
+                "operator": "equal",
+                "operand": false
+            }
+        ]
+    },
+    {
+        "command": "lsp_document_symbols",
+        "keys": [
+            "primary+r"
+        ],
+        "context": [
+            {
+                "key": "lsp.session_with_capability",
+                "operator": "equal",
+                "operand": "documentSymbolProvider"
+            }
+        ]
+    },
+    {
+        "command": "lsp_workspace_symbols",
+        "keys": [
+            "primary+shift+r"
+        ],
+        "context": [
+            {
+                "key": "lsp.session_with_capability",
+                "operator": "equal",
+                "operand": "workspaceSymbolProvider"
+            }
+        ]
+    },
+    {
+        "keys": [
+            "f1"
+        ],
+        "command": "show_overlay",
+        "args": {
+            "overlay": "command_palette",
+            "text": "LSP: ",
+        },
+        "context": [
+            {
+                "key": "setting.lsp_active"
+            }
+        ]
+    },
 ]
