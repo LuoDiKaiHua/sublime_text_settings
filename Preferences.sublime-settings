@@ -10,24 +10,20 @@
 	"color_scheme": "auto",
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
-	"font_face": "Source Code Pro",
-	"font_options":
-	[
-		"directwrite",
-		"no_italic"
+	"font_face": "JetBrains Mono",
+	"font_options": [
+		"directwrite"
 	],
-	"font_size": 12,
+	"font_size": 14,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
 	"hardware_acceleration": "opengl",
 	"hide_new_tab_button": true,
-	"ignored_packages":
-	[
+	"ignored_packages": [
 		"Rust",
 		"Vintage",
 	],
-	"indent_guide_options":
-	[
+	"indent_guide_options": [
 		"draw_normal",
 		"draw_active"
 	],
@@ -47,8 +43,7 @@
 	"show_line_endings": true,
 	"show_tab_close_buttons": false,
 	"theme": "Adaptive.sublime-theme",
-	"theme_font_options":
-	[
+	"theme_font_options": [
 		"directwrite"
 	],
 	"translate_tabs_to_spaces": true,
