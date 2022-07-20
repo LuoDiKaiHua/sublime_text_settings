@@ -10,9 +10,10 @@
 	"color_scheme": "auto",
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
-	"font_face": "JetBrains Mono",
+	"font_face": "Fira Code",
 	"font_options": [
-		"directwrite"
+		"directwrite",
+		"no_italic",
 	],
 	"font_size": 14,
 	"highlight_line": false,
@@ -20,7 +21,6 @@
 	"hardware_acceleration": "opengl",
 	"hide_new_tab_button": true,
 	"ignored_packages": [
-		"Rust",
 		"Vintage",
 	],
 	"indent_guide_options": [
