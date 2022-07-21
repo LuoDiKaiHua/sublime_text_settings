@@ -10,10 +10,9 @@
 	"color_scheme": "auto",
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
-	"font_face": "Fira Code",
+	"font_face": "JetBrains Mono",
 	"font_options": [
-		"directwrite",
-		"no_italic",
+		"directwrite"
 	],
 	"font_size": 14,
 	"highlight_line": false,
