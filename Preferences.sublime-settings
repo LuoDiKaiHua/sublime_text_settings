@@ -20,6 +20,7 @@
 	"hardware_acceleration": "opengl",
 	"hide_new_tab_button": true,
 	"ignored_packages": [
+		"Rust",
 		"Vintage",
 	],
 	"indent_guide_options": [
