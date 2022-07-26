@@ -1,14 +1,15 @@
 // Documentation at https://www.sublimetext.com/docs/themes.html
 {
-    "variables":
-    {
-    },
-    "rules":
-    [
+    "variables": {},
+    "rules": [
         {
             "class": "text_line_control",
             "font.size": "var(font_size_lg)",
             "content_margin": [4, 1, 4, 1]
+        },
+        {
+            "class": "tabset_control",
+            "content_margin": [0, -3, 0, 0]
         }
     ]
 }
