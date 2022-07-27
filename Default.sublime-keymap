@@ -129,6 +129,25 @@
     },
     {
         "keys": [
+            "primary+shift+g"
+        ],
+        "command": "emmet_wrap_with_abbreviation",
+        "context": [
+            {
+                "key": "selection_empty",
+                "operator": "equal",
+                "operand": false,
+            },
+            {
+                "key": "selector",
+                "operator": "equal",
+                "operand": "(text.html, text.xml) - source",
+                "match_all": true
+            }
+        ]
+    },
+    {
+        "keys": [
             "primary+alt+t"
         ],
         "command": "terminus_open",
