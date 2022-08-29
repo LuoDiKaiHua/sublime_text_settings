@@ -7,6 +7,13 @@
                     "docker-compose.yml"
                 ],
                 "uri": "https://raw.githubusercontent.com/docker/compose/master/compose/config/compose_spec.json"
+            },
+            {
+                "fileMatch": [
+                    "CMakePresets.json",
+                    "CMakeUserPresets.json"
+                ],
+                "uri": "https://raw.githubusercontent.com/Kitware/CMake/release/Help/manual/presets/schema.json"
             }
         ]
     }
