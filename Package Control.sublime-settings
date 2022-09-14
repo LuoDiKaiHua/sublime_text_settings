@@ -27,6 +27,7 @@
 		"LSP-file-watcher-chokidar",
 		"LSP-html",
 		"LSP-json",
+		"LSP-lemminx",
 		"LSP-lua",
 		"LSP-PowerShellEditorServices",
 		"LSP-pylsp",
