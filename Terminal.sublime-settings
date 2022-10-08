@@ -1,4 +1,2 @@
 {
-    "terminal": "wt",
-    "parameters": ["-d", "."]
 }
