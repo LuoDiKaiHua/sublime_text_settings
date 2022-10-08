@@ -1,5 +1,16 @@
 {
     "default_config": {
         "windows": "PowerShell"
-    }
+    },
+    "shell_configs": [
+        {
+            "name": "PowerShell",
+            "cmd": "powershell.exe -NoLogo",
+            "env": {},
+            "enable": true,
+            "platforms": [
+                "windows"
+            ]
+        }
+    ]
 }
