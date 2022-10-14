@@ -16,7 +16,7 @@
 	"font_options": [
 		"directwrite"
 	],
-	"font_size": 14,
+	"font_size": 12,
 	"highlight_line": false,
 	"highlight_modified_tabs": true,
 	"hardware_acceleration": "opengl",
