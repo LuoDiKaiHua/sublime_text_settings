@@ -51,4 +51,5 @@
 		"directwrite"
 	],
 	"translate_tabs_to_spaces": true,
+	"mdpopups.use_sublime_highlighter": false,
 }
