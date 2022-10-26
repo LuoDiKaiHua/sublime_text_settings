@@ -1,0 +1,10 @@
+{
+    "statusbar_modified_time": true,
+    "statusbar_modified_time_format": "%H:%M:%S %m-%d-%Y",
+    "confirm_before_deleting": false,
+    "confirm_before_permanently_deleting": false,
+    "new_files_relative_to_project_root": true,
+    "new_folders_relative_to_project_root": true,
+    "disable_send_to_trash": true,
+    "i_donated_to_sidebar_enhancements_developer": "https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DD4SL2AHYJGBW",
+}

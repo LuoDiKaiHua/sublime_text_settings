@@ -5,6 +5,7 @@
 	],
 	"installed_packages":
 	[
+		"A File Icon",
 		"BracketHighlighter",
 		"Case Conversion",
 		"CMake",
@@ -41,6 +42,7 @@
 		"Protobuf Syntax Hightlighting",
 		"Rust Enhanced",
 		"SFTP",
+		"SideBarEnhancements",
 		"Status Bar File Size",
 		"Super Calculator",
 		"Terminal",
