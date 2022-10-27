@@ -17,7 +17,7 @@
 		"GitGutter",
 		"HexViewer",
 		"Http Requester",
-		"Kotlin",
+		"kotlin-sublime-package",
 		"LiveReload",
 		"LSP",
 		"LSP-bash",
@@ -52,6 +52,7 @@
 	],
 	"repositories":
 	[
-		"https://github.com/sublimelsp/LSP-cmake"
+		"https://github.com/sublimelsp/LSP-cmake",
+		"https://github.com/LuoDiKaiHua/kotlin-sublime-package"
 	],
 }
