@@ -11,7 +11,6 @@
 	"dark_color_scheme": "Monokai.sublime-color-scheme",
 	"light_color_scheme": "Celeste.sublime-color-scheme",
 	"enable_tab_scrolling": false,
-	"ensure_newline_at_eof_on_save": true,
 	"font_face": "JetBrains Mono",
 	"font_options": [
 		"directwrite"
