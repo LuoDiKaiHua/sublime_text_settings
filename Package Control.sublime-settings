@@ -21,6 +21,7 @@
 		"LiveReload",
 		"LSP",
 		"LSP-bash",
+		"LSP-clangd",
 		"LSP-cmake",
 		"LSP-css",
 		"LSP-Dart",
