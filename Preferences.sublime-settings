@@ -8,6 +8,7 @@
 	"caret_extra_bottom": 1,
 	"caret_style": "smooth",
 	"color_scheme": "auto",
+	"default_line_ending": "unix",
 	"dark_color_scheme": "Monokai.sublime-color-scheme",
 	"light_color_scheme": "Celeste.sublime-color-scheme",
 	"enable_tab_scrolling": false,
@@ -37,7 +38,10 @@
 	"match_brackets_content": false,
 	"match_tags": false,
 	"mini_diff": "auto",
-	"rulers": [],
+	"rulers": [
+		120
+	],
+	"ruler_style": "stippled",
 	"shift_tab_unindent": true,
 	"show_encoding": true,
 	"show_rel_path": true,
