@@ -18,6 +18,9 @@
         "pylsp.plugins.jedi_signature_help.enabled": false,
         "pylsp.plugins.jedi_symbols.enabled": false,
 
+        "pylsp.plugins.pycodestyle.maxLineLength": 120,
+
         "pylsp.plugins.pylsp_black.enabled": true,
+        "pylsp.plugins.pylsp_black.line_length": 120,
     },
 }
