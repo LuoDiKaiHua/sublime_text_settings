@@ -11,7 +11,7 @@
 	"default_line_ending": "unix",
 	"draw_centered": false,
 	"dark_color_scheme": "Monokai.sublime-color-scheme",
-	"light_color_scheme": "Celeste.sublime-color-scheme",
+	"light_color_scheme": "Breakers.sublime-color-scheme",
 	"enable_tab_scrolling": false,
 	"font_face": "Source Code Pro",
 	"font_options": [
