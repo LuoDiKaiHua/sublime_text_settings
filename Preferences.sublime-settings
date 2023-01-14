@@ -37,9 +37,7 @@
 	"match_brackets_content": false,
 	"match_tags": false,
 	"mini_diff": "auto",
-	"rulers": [
-		120
-	],
+	"rulers": [],
 	"ruler_style": "stippled",
 	"shift_tab_unindent": true,
 	"show_encoding": true,
