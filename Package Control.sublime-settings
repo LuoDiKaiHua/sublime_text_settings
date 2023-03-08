@@ -35,6 +35,7 @@
 		"LSP-pyright",
 		"LSP-rust-analyzer",
 		"LSP-typescript",
+		"LSP-volar",
 		"LSP-yaml",
 		"MarkdownPreview",
 		"Package Control",
@@ -50,6 +51,7 @@
 		"Text Pastry",
 		"TOML",
 		"Virtualenv",
+		"Vue Syntax Highlight",
 	],
 	"repositories":
 	[
