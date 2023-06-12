@@ -117,37 +117,6 @@
     },
     {
         "keys": [
-            "primary+e"
-        ],
-        "command": "emmet_expand_abbreviation"
-    },
-    {
-        "keys": [
-            "primary+."
-        ],
-        "command": "emmet_enter_abbreviation"
-    },
-    {
-        "keys": [
-            "primary+shift+g"
-        ],
-        "command": "emmet_wrap_with_abbreviation",
-        "context": [
-            {
-                "key": "selection_empty",
-                "operator": "equal",
-                "operand": false,
-            },
-            {
-                "key": "selector",
-                "operator": "equal",
-                "operand": "(text.html, text.xml) - source",
-                "match_all": true
-            }
-        ]
-    },
-    {
-        "keys": [
             "primary+alt+t"
         ],
         "command": "terminus_open",
@@ -160,6 +129,38 @@
             "alt+f12"
         ],
         "command": "toggle_terminus_panel"
+    },
+    {
+        "keys": [
+            "shift+ctrl+g"
+        ],
+        "command": "emmet_wrap_with_abbreviation",
+        "context": [
+            {
+                "key": "setting.is_widget",
+                "operand": false
+            },
+            {
+                "operand": "(text.html, text.xml, text.jsx) - source",
+                "operator": "equal",
+                "match_all": true,
+                "key": "selector"
+            }
+        ]
+    },
+    {
+        "keys": [
+            "ctrl+."
+        ],
+        "command": "emmet_enter_abbreviation",
+        "context": [
+            {
+                "operand": "(text.html, text.xml, text.jsx) - source",
+                "operator": "equal",
+                "match_all": true,
+                "key": "selector"
+            }
+        ]
     },
     {
         "keys": [
@@ -272,4 +273,16 @@
             }
         ]
     },
+    {
+        "keys": [
+            "ctrl+shift+t"
+        ],
+        "command": "open_terminal"
+    },
+    {
+        "keys": [
+            "ctrl+shift+alt+t"
+        ],
+        "command": "open_terminal_project_folder"
+    }
 ]
