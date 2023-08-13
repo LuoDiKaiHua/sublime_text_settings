@@ -1,0 +1,90 @@
+%YAML 1.2
+---
+# See http://www.sublimetext.com/docs/syntax.html
+file_extensions:
+  - ahk
+  - ah2
+  - ahk2
+scope: source.ahk2
+contexts:
+  main:
+    - match: ^\s*(:(?i:\s|\*|\?0?|c[01]?|[pk]\d+|s[ipe]|[brto]0?|z)*:[\x09\x20-\x7E]+?)(::)(.*)$
+      scope: meta.block.hotstring.ahk2
+
+    - match: ^\s*(:(?i:\s|\*|\?0?|c[01]?|[pk]\d+|s[ipe]|[brto]0?|x|z)*:[\x09\x20-\x7E]+?)(::)
+      scope: meta.block.hotstring.ahk2
+
+    - match: ^\s*(?i:((([<>$~*!+#^]*?)(`;|[\x21-\x3A\x3C-\x7E]|[a-z]\w+|[^\x00-\x7f]))|(`;|[\x21-\x3A\x3C-\x7E]|[a-z]\w+|[^\x00-\x7f])\s+&\s+~?(`;|[\x21-\x3A\x3C-\x7E]|[a-z]\w+|[^\x00-\x7f]))(\s+up)?)(::)\s*(['"]|`{)?
+      scope: meta.hotkeyline.ahk2
+
+    - match: (#)(?i:include|dllload|requires|errorstdout|definedefault(array|map|object)value|windowclass(gui|main)|hotstring|clipboardtimeout|criticalobject(sleeptime|timeout)|hotif|hotiftimeout|inputlevel|maxthreads|maxthreadsbuffer|maxthreadsperhotkey|notrayicon|singleinstance|suspendexempt|usehook|warn|warncontinuableexception|winactivateforce|dllimport)(.*)$
+      scope: meta.preprocessor.ahk2
+
+    # Strings begin and end with quotes, and use backslashes as an escape
+    # character
+    - match: '("|'')'
+      scope: punctuation.definition.string.begin.ahk2
+      push: double_quoted_string
+
+    # Comments
+    - match: '^\s*;|(?<=\s);'
+      scope: punctuation.definition.comment.ahk2
+      push: line_comment
+
+    - match: '^\s*/\*'
+      scope: punctuation.definition.comment.ahk2
+      push: block_comment
+
+    # Keywords are if, else for and while.
+    # Note that blackslashes don't need to be escaped within single quoted
+    # strings in YAML. When using single quoted strings, only single quotes
+    # need to be escaped: this is done by using two single quotes next to each
+    # other.
+    - match: '(?<!\.)\b(?i:(static|local|global|class))\b'
+      scope: keyword.ahk2
+
+    - match: '(?<!\.)\b(?i:(break|continue|until|else|for|goto|switch|if|throw|try|finally|return|while))\b'
+      scope: keyword.control.ahk2
+
+    - match: '^\s*\b(?i:(case|default))\b'
+      scope: keyword.control.ahk2
+
+    # Numbers
+    - match: '\b-?[0-9.]+\b|0[xX][\da-fA-F]+'
+      scope: constant.numeric.ahk2
+
+    - match: \b\w+\b(?=\()
+      scope: variable.function.ahk2
+
+    - match: \b\w+\b
+      scope: variable.ahk2
+
+  double_quoted_string:
+    - meta_scope: string.quoted.double.ahk2
+    - match: '`.'
+      scope: constant.character.escape.ahk2
+    - match: '\s;'
+      scope: punctuation.definition.comment.ahk2
+      push: line_comment
+    - match: '^\s*\('
+      push: string_continuation
+    - match: '\1'
+      scope: punctuation.definition.string.end.ahk2
+      pop: true
+
+  line_comment:
+    - meta_scope: comment.line.ahk2
+    - match: $
+      pop: true
+
+  block_comment:
+    - meta_scope: comment.block.ahk2
+    - match: '\*/'
+      pop: true
+
+  string_continuation:
+    - meta_scope: string.quoted.double.ahk2
+    - match: '`.'
+      scope: constant.character.escape.ahk2
+    - match: '^\s*\)'
+      pop: true
