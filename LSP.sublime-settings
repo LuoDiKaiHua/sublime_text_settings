@@ -2,6 +2,8 @@
 {
     "show_diagnostics_panel_on_save": 0,
     "show_diagnostics_count_in_view_status": true,
+    "show_inlay_hints": true,
+    "semantic_highlighting": true,
     "clients": {
         "lsp-ahk2": {
             "enabled": true,
@@ -50,5 +52,4 @@
             }
         }
     },
-    "semantic_highlighting": true
 }
