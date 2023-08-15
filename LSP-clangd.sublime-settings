@@ -1,6 +1,8 @@
 // Settings in here override those in "LSP-clangd/LSP-clangd.sublime-settings"
 {
-    "clangd.header-insertion": "never",
-    "clangd.pch-storage": "memory",
-    "clangd.enable-config": true,
+    "initializationOptions": {
+        "clangd.header-insertion": "never",
+        "clangd.pch-storage": "memory",
+        "clangd.enable-config": true,
+    }
 }
