@@ -21,6 +21,7 @@
 		"LSP-bash",
 		"LSP-clangd",
 		"LSP-cmake",
+		"LSP-copilot",
 		"LSP-css",
 		"LSP-Dart",
 		"LSP-dockerfile",
