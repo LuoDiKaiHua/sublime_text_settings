@@ -9,7 +9,7 @@
             "enabled": true,
             "command": [
                 "node",
-                "~/.vscode/extensions/thqby.vscode-autohotkey2-lsp-2.1.2/server/dist/server.js",
+                "~/.vscode/extensions/thqby.vscode-autohotkey2-lsp-2.1.3/server/dist/server.js",
                 "--stdio"
             ],
             "selector": "source.ahk2",
