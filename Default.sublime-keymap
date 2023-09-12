@@ -1,12 +1,6 @@
 [
     {
         "keys": [
-            "alt+m"
-        ],
-        "command": "markdown_preview"
-    },
-    {
-        "keys": [
             "primary+alt+left"
         ],
         "command": "jump_back"
@@ -16,12 +10,6 @@
             "primary+alt+right"
         ],
         "command": "jump_forward"
-    },
-    {
-        "keys": [
-            "primary+alt+l"
-        ],
-        "command": "reindent"
     },
     {
         "keys": [
@@ -117,22 +105,13 @@
     },
     {
         "keys": [
-            "primary+alt+t"
-        ],
-        "command": "terminus_open",
-        "args": {
-            "cwd": "${file_path:${folder}}"
-        }
-    },
-    {
-        "keys": [
             "alt+f12"
         ],
         "command": "toggle_terminus_panel"
     },
     {
         "keys": [
-            "shift+ctrl+g"
+            "ctrl+shift+g"
         ],
         "command": "emmet_wrap_with_abbreviation",
         "context": [
@@ -260,29 +239,47 @@
     },
     {
         "keys": [
-            "f1"
-        ],
-        "command": "show_overlay",
-        "args": {
-            "overlay": "command_palette",
-            "text": "LSP: ",
-        },
-        "context": [
-            {
-                "key": "setting.lsp_active"
-            }
-        ]
-    },
-    {
-        "keys": [
-            "ctrl+shift+t"
+            "ctrl+shift+c"
         ],
         "command": "open_terminal"
     },
     {
         "keys": [
-            "ctrl+shift+alt+t"
+            "ctrl+shift+alt+c"
         ],
         "command": "open_terminal_project_folder"
-    }
+    },
+    {
+        "keys": [
+            "alt+left"
+        ],
+        "command": "copilot_previous_completion",
+        "context": [
+            {
+                "key": "setting.copilot.completion.is_visible",
+            }
+        ]
+    },
+    {
+        "keys": [
+            "alt+right"
+        ],
+        "command": "copilot_next_completion",
+        "context": [
+            {
+                "key": "setting.copilot.completion.is_visible"
+            }
+        ]
+    },
+    {
+        "keys": [
+            "alt+/"
+        ],
+        "command": "copilot_ask_completions",
+        "context": [
+            {
+                "key": "copilot.is_authorized",
+            }
+        ]
+    },
 ]
