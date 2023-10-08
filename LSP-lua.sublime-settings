@@ -1,4 +1,4 @@
 // Settings in here override those in "LSP-lua/LSP-lua.sublime-settings"
 {
-    "locale": "zh-CN",
+    "server_version": "3.7.0"
 }
