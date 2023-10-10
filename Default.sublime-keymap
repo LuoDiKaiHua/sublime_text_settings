@@ -271,4 +271,37 @@
             }
         ]
     },
+    {
+        "keys": [
+            "alt+/"
+        ],
+        "command": "copilot_ask_completions",
+        "context": [
+            {
+                "key": "copilot.is_authorized"
+            }
+        ]
+    },
+    {
+        "keys": [
+            "alt+left"
+        ],
+        "command": "copilot_previous_completion",
+        "context": [
+            {
+                "key": "setting.copilot.completion.is_visible",
+            }
+        ]
+    },
+    {
+        "keys": [
+            "alt+right"
+        ],
+        "command": "copilot_next_completion",
+        "context": [
+            {
+                "key": "setting.copilot.completion.is_visible"
+            }
+        ]
+    },
 ]
