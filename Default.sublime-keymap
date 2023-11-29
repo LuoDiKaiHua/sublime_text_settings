@@ -273,7 +273,7 @@
     },
     {
         "keys": [
-            "alt+/"
+            "ctrl+alt+/"
         ],
         "command": "copilot_ask_completions",
         "context": [
@@ -302,6 +302,29 @@
             {
                 "key": "setting.copilot.completion.is_visible"
             }
+        ]
+    },
+    {
+        "keys": [
+            "alt+/"
+        ],
+        "command": "auto_complete"
+    },
+    {
+        "keys": [
+            "alt+/"
+        ],
+        "command": "move",
+        "args": {
+            "by": "lines",
+            "forward": true
+        },
+        "context": [
+            {
+                "key": "auto_complete_primed",
+                "operator": "equal",
+                "operand": true
+            },
         ]
     },
 ]
