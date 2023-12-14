@@ -14,6 +14,7 @@
 		"Dockerfile Syntax Highlighting",
 		"EditorConfig",
 		"Emmet",
+		"ExpandRegion",
 		"GitGutter",
 		"HexViewer",
 		"kotlin-sublime-package",

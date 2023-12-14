@@ -327,4 +327,10 @@
             },
         ]
     },
+    {
+        "keys": [
+            "ctrl+d"
+        ],
+        "command": "expand_region",
+    },
 ]
