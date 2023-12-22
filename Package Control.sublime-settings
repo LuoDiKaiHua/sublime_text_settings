@@ -35,6 +35,7 @@
 		"LSP-pylsp",
 		"LSP-pyright",
 		"LSP-rust-analyzer",
+		"LSP-tailwindcss",
 		"LSP-typescript",
 		"LSP-volar",
 		"LSP-yaml",
