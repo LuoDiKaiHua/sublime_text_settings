@@ -1,4 +1,4 @@
 // Settings in here override those in "LSP-lua/LSP-lua.sublime-settings"
 {
-    "server_version": "3.7.0"
+    "server_version": "3.7.3"
 }
