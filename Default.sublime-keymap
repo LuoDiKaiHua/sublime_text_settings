@@ -273,7 +273,18 @@
     },
     {
         "keys": [
-            "ctrl+alt+/"
+            "ctrl+alt+/",
+        ],
+        "command": "copilot_ask_completions",
+        "context": [
+            {
+                "key": "copilot.is_authorized"
+            }
+        ]
+    },
+    {
+        "keys": [
+            "alt+\\",
         ],
         "command": "copilot_ask_completions",
         "context": [
