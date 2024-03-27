@@ -1,3 +1,5 @@
 {
     "wrap_width": 0,
+    "line_numbers": true,
+    "gutter": true,
 }
