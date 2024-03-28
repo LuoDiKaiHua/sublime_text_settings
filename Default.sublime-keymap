@@ -13,9 +13,13 @@
     },
     {
         "keys": [
-            "primary+shift+o"
+            "primary+e"
         ],
-        "command": "prompt_select_workspace"
+        "command": "show_overlay",
+        "args": {
+            "overlay": "goto",
+            "show_files": true
+        }
     },
     {
         "keys": [
@@ -111,7 +115,7 @@
     },
     {
         "keys": [
-            "ctrl+shift+g"
+            "primary+shift+g"
         ],
         "command": "emmet_wrap_with_abbreviation",
         "context": [
@@ -129,7 +133,7 @@
     },
     {
         "keys": [
-            "ctrl+."
+            "primary+."
         ],
         "command": "emmet_enter_abbreviation",
         "context": [
@@ -239,13 +243,13 @@
     },
     {
         "keys": [
-            "ctrl+shift+c"
+            "primary+shift+c"
         ],
         "command": "open_terminal"
     },
     {
         "keys": [
-            "ctrl+shift+alt+c"
+            "primary+shift+alt+c"
         ],
         "command": "open_terminal_project_folder"
     },
@@ -273,7 +277,7 @@
     },
     {
         "keys": [
-            "ctrl+alt+/",
+            "primary+alt+/",
         ],
         "command": "copilot_ask_completions",
         "context": [
@@ -340,7 +344,7 @@
     },
     {
         "keys": [
-            "ctrl+d"
+            "primary+d"
         ],
         "command": "expand_region",
     },
