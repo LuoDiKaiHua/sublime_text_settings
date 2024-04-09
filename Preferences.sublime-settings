@@ -16,6 +16,7 @@
 	"font_face": "FiraCode Nerd Font Mono",
 	"font_options": [
 		"directwrite",
+		"no_italic",
 	],
 	"font_size": 10,
 	"highlight_line": false,
