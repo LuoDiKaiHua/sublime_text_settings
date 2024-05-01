@@ -1,0 +1,5 @@
+{
+    "shell_cmd": "dart $file",
+    "selector": "source.dart",
+    "working_dir": "${project_path:${folder}}"
+}
