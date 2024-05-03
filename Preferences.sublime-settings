@@ -33,6 +33,7 @@
 		"draw_normal",
 		"draw_active"
 	],
+	"index_files": true,
 	"margin": 0,
 	"match_brackets": false,
 	"match_brackets_angle": false,
