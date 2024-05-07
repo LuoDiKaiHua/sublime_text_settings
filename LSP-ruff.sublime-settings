@@ -1,0 +1,11 @@
+// Settings in here override those in "LSP-ruff/LSP-ruff.sublime-settings"
+{
+    "initializationOptions": {
+        "globalSettings": {
+            "format.args": [
+                "--config",
+                "format.quote-style='preserve'"
+            ]
+        }
+    }
+}

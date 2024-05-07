@@ -255,28 +255,6 @@
     },
     {
         "keys": [
-            "alt+left"
-        ],
-        "command": "copilot_previous_completion",
-        "context": [
-            {
-                "key": "setting.copilot.completion.is_visible",
-            }
-        ]
-    },
-    {
-        "keys": [
-            "alt+right"
-        ],
-        "command": "copilot_next_completion",
-        "context": [
-            {
-                "key": "setting.copilot.completion.is_visible"
-            }
-        ]
-    },
-    {
-        "keys": [
             "primary+alt+/",
         ],
         "command": "copilot_ask_completions",
@@ -340,6 +318,18 @@
                 "operator": "equal",
                 "operand": true
             },
+        ]
+    },
+    {
+        "keys": [
+            "alt+enter"
+        ],
+        "command": "lsp_code_actions",
+        "context": [
+            {
+                "key": "lsp.session_with_capability",
+                "operand": "codeActionProvider"
+            }
         ]
     },
     {
