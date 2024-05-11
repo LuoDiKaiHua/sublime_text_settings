@@ -1,0 +1,7 @@
+{
+    "target": "sql_run",
+    "selector": "source.sql",
+    "cancel": {
+        "kill": true
+    }
+}
