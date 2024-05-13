@@ -36,18 +36,6 @@ class SqlRunCommand(sublime_plugin.WindowCommand):
 
         with self.panel_lock:
             self.panel = self.window.create_output_panel('exec')
-
-            settings = self.panel.settings()
-            settings.set(
-                'result_file_regex',
-                r'^File "([^"]+)" line (\d+) col (\d+)',
-            )
-            settings.set(
-                'result_line_regex',
-                r'^\s+line (\d+) col (\d+)',
-            )
-            settings.set('result_base_dir', working_dir)
-
             self.window.run_command('show_panel', {'panel': 'output.exec'})
 
         if self.proc is not None:
@@ -59,7 +47,7 @@ class SqlRunCommand(sublime_plugin.WindowCommand):
                 if m := self.scheme_pattern.match(line):
                     uri = m.group('uri').decode(encoding=self.encoding)
                     self.proc = subprocess.Popen(
-                        ['usql', '-f', source_file, '-J', '-q', uri],
+                        ['usql', '-J', '-f', source_file, '-q', uri],
                         stdout=subprocess.PIPE,
                         stderr=subprocess.PIPE,
                         cwd=working_dir,
@@ -73,17 +61,15 @@ class SqlRunCommand(sublime_plugin.WindowCommand):
                     ).start()
                     break
             else:
-                self.queue_write(
-                    'db file not found, add it using comment like uri={SCHEME}'
-                )
+                self.queue_write('db file not found, add it with "uri={SCHEME}"')
 
     def read_handle(self, std_out: IO[bytes], std_err: IO[bytes]):
         try:
-            for pipe in (std_err, std_out):
+            for pipe in (std_out, std_err):
                 for line in iter(pipe.readline, b''):
                     self.queue_write(line.decode(self.encoding, "ignore").strip())
         except UnicodeDecodeError as e:
-            self.queue_write(f'Error decoding output using {self.encoding} - {e}')
+            self.queue_write(f'\nError decoding output using {self.encoding} - {e}')
         except IOError:
             if self.killed:
                 msg = 'Cancelled'
@@ -91,6 +77,8 @@ class SqlRunCommand(sublime_plugin.WindowCommand):
                 msg = 'Finished'
 
             self.queue_write(f'\n{msg}')
+        except Exception as e:
+            self.queue_write(f'error occur: {e}')
 
     def queue_write(self, text):
         sublime.set_timeout(lambda: self.do_write(text), 1)
