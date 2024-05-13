@@ -1,9 +1,7 @@
 # coding: utf-8
 
-import os
 import re
 import subprocess
-from sys import stderr, stdout
 import threading
 from pathlib import Path
 from typing import IO
@@ -17,7 +15,7 @@ class SqlRunCommand(sublime_plugin.WindowCommand):
     killed = False
     panel = None
     panel_lock = threading.Lock()
-    path_pattern = re.compile(r'\s*--\s*([^\s]+)')
+    scheme_pattern = re.compile(rb'^\s*--\s*uri\s*=\s*(?P<uri>.*://[^\s]+)$')
     encoding = 'utf8'
 
     def is_enable(self, kill=False):
@@ -56,21 +54,12 @@ class SqlRunCommand(sublime_plugin.WindowCommand):
             self.proc.terminate()
             self.proc = None
 
-        with Path(source_file).open(mode='r', encoding=self.encoding) as fp:
-            for line in iter(fp.readline, ''):
-                if m := self.path_pattern.match(line):
-                    db_filepath = Path(m.group(1)).expanduser()
-                    if not db_filepath.exists():
-                        continue
+        with Path(source_file).open(mode='rb') as fp:
+            for line in iter(fp.readline, b''):
+                if m := self.scheme_pattern.match(line):
+                    uri = m.group('uri').decode(encoding=self.encoding)
                     self.proc = subprocess.Popen(
-                        [
-                            'usql',
-                            '-f',
-                            source_file,
-                            '-J',
-                            '-q',
-                            f'file:///{db_filepath}',
-                        ],
+                        ['usql', '-f', source_file, '-J', '-q', uri],
                         stdout=subprocess.PIPE,
                         stderr=subprocess.PIPE,
                         cwd=working_dir,
@@ -84,7 +73,9 @@ class SqlRunCommand(sublime_plugin.WindowCommand):
                     ).start()
                     break
             else:
-                self.queue_write('db file not found, add it with comment')
+                self.queue_write(
+                    'db file not found, add it using comment like uri={SCHEME}'
+                )
 
     def read_handle(self, std_out: IO[bytes], std_err: IO[bytes]):
         try:
