@@ -55,34 +55,34 @@ class SqlRunCommand(sublime_plugin.WindowCommand):
                     )
                     self.killed = False
 
-                    threading.Thread(
-                        target=self.read_handle,
-                        args=(self.proc.stdout, self.proc.stderr),
-                    ).start()
+                    for pipe in (self.proc.stdout, self.proc.stderr):
+                        if not pipe:
+                            continue
+                        threading.Thread(target=self._read_pipe, args=(pipe,)).start()
                     break
             else:
-                self.queue_write('db file not found, add it with "uri={SCHEME}"')
+                self._queue_write(
+                    '\ndatabase file not found, add it with "uri={SCHEME}" comment'
+                )
 
-    def read_handle(self, std_out: IO[bytes], std_err: IO[bytes]):
+    def _read_pipe(self, pipe: IO[bytes]):
         try:
-            for pipe in (std_out, std_err):
-                for line in iter(pipe.readline, b''):
-                    self.queue_write(line.decode(self.encoding, "ignore").strip())
+            for line in iter(pipe.readline, b''):
+                self._queue_write(line.decode(self.encoding).strip())
         except UnicodeDecodeError as e:
-            self.queue_write(f'\nError decoding output using {self.encoding} - {e}')
+            self._queue_write(f'\nError decoding output using {self.encoding} - {e}')
         except IOError:
             if self.killed:
                 msg = 'Cancelled'
             else:
                 msg = 'Finished'
-
-            self.queue_write(f'\n{msg}')
+            self._queue_write(f'\n{msg}')
         except Exception as e:
-            self.queue_write(f'error occur: {e}')
+            self._queue_write(f'\nError occured: {e}')
 
-    def queue_write(self, text):
-        sublime.set_timeout(lambda: self.do_write(text), 1)
+    def _queue_write(self, text):
+        sublime.set_timeout(lambda: self._do_write(text), 1)
 
-    def do_write(self, text):
+    def _do_write(self, text):
         with self.panel_lock:
             self.panel.run_command('append', {'characters': text})
