@@ -3,5 +3,11 @@
     "selector": "source.sql",
     "cancel": {
         "kill": true
-    }
+    },
+    "variants": [
+        {
+            "name": "Tab View",
+            "new_tab": true,
+        }
+    ]
 }

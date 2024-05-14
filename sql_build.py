@@ -13,8 +13,8 @@ import sublime_plugin
 class SqlRunCommand(sublime_plugin.WindowCommand):
     proc = None
     killed = False
-    panel = None
-    panel_lock = threading.Lock()
+    msg_view = None
+    msg_view_lock = threading.Lock()
     scheme_pattern = re.compile(rb'^\s*--\s*uri\s*=\s*(?P<uri>.*://[^\s]+)$')
     encoding = 'utf8'
 
@@ -23,7 +23,7 @@ class SqlRunCommand(sublime_plugin.WindowCommand):
             return self.proc is not None and self.proc.poll() is None
         return True
 
-    def run(self, kill=False):
+    def run(self, kill=False, new_tab=False):
         if kill:
             if self.proc:
                 self.killed = True
@@ -34,9 +34,15 @@ class SqlRunCommand(sublime_plugin.WindowCommand):
         working_dir = vars['file_path']
         source_file = vars['file']
 
-        with self.panel_lock:
-            self.panel = self.window.create_output_panel('exec')
-            self.window.run_command('show_panel', {'panel': 'output.exec'})
+        with self.msg_view_lock:
+            if new_tab:
+                self.msg_view = self.window.new_file(
+                    flags=sublime.NewFileFlags.NONE,
+                    syntax='Packages/JSON/JSON.sublime-syntax',
+                )
+            else:
+                self.msg_view = self.window.create_output_panel('exec')
+                self.window.run_command('show_panel', {'panel': 'output.exec'})
 
         if self.proc is not None:
             self.proc.terminate()
@@ -84,5 +90,5 @@ class SqlRunCommand(sublime_plugin.WindowCommand):
         sublime.set_timeout(lambda: self._do_write(text), 1)
 
     def _do_write(self, text):
-        with self.panel_lock:
-            self.panel.run_command('append', {'characters': text})
+        with self.msg_view_lock:
+            self.msg_view.run_command('append', {'characters': text})
