@@ -14,7 +14,8 @@
 	"light_color_scheme": "Breakers.sublime-color-scheme",
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
-	"font_face": "FiraCode Nerd Font Mono",
+	// "font_face": "FiraCode Nerd Font Mono",
+	"font_face": "NotoSansM NFM",
 	"font_options": [
 		"directwrite",
 		"no_italic",
