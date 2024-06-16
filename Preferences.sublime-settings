@@ -21,7 +21,7 @@
 		// "no_italic",
 	],
 	"font_size": 10,
-	"highlight_line": true,
+	"highlight_line": false,
 	"highlight_line_number": true,
 	"highlight_modified_tabs": true,
 	"hardware_acceleration": "opengl",
