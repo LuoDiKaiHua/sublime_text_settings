@@ -1,0 +1,16 @@
+<snippet>
+    <content><![CDATA[
+#ifdef __cplusplus
+extern "C" {
+#endif
+
+$0
+
+#ifdef __cplusplus
+}
+#endif
+]]></content>
+    <description><![CDATA[Add namespace]]></description>
+    <tabTrigger>ae</tabTrigger>
+    <scope>source.c++</scope>
+</snippet>

@@ -1,0 +1,13 @@
+<snippet>
+    <content><![CDATA[
+#ifndef ${TM_FILEPATH/([^a-zA-z0-9])|(.)/(?1:_)(?2:\U$2)/g}_
+#define ${TM_FILEPATH/([^a-zA-z0-9])|(.)/(?1:_)(?2:\U$2)/g}_
+
+$1
+
+#endif // ${TM_FILEPATH/([^a-zA-z0-9])|(.)/(?1:_)(?2:\U$2)/g}_
+]]></content>
+    <description><![CDATA[Add #ifndef, #define and #endif]]></description>
+    <tabTrigger>ahg</tabTrigger>
+    <scope>source.c++,source.c</scope>
+</snippet>
