@@ -16,7 +16,7 @@
 	"font_face": "NotoSansM NFM",
 	"font_options": [
 		"directwrite",
-		// "no_italic",
+		"no_italic",
 	],
 	"font_size": 10,
 	"highlight_line": false,
