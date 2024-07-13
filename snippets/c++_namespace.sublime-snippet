@@ -6,7 +6,7 @@ $0
 
 }
 ]]></content>
-    <description><![CDATA[Add namespace]]></description>
     <tabTrigger>ans</tabTrigger>
     <scope>source.c++</scope>
+    <description><![CDATA[Add namespace]]></description>
 </snippet>

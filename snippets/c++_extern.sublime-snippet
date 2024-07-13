@@ -10,7 +10,7 @@ $0
 }
 #endif
 ]]></content>
-    <description><![CDATA[Add namespace]]></description>
     <tabTrigger>ae</tabTrigger>
     <scope>source.c++</scope>
+    <description><![CDATA[Add namespace]]></description>
 </snippet>

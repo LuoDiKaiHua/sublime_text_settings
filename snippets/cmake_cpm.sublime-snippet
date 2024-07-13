@@ -1,0 +1,15 @@
+<snippet>
+    <content><![CDATA[
+CPMAddPackage(
+  NAME          $1    # The unique name of the dependency (should be the exported target's name)
+  VERSION       $2    # The minimum version of the dependency (optional, defaults to 0)
+  PATCHES       $3    # Patch files to be applied sequentially using patch and PATCH_OPTIONS (optional)
+  OPTIONS       $4    # Configuration options passed to the dependency (optional)
+  DOWNLOAD_ONLY ${5:OFF} # If set, the project is downloaded, but not configured (optional)
+  ${6:# [...]}           # Origin parameters forwarded to FetchContent_Declare, see below
+)
+]]></content>
+    <tabTrigger>cpm</tabTrigger>
+    <scope>source.cmake</scope>
+    <description><![CDATA[CPM add package]]></description>
+</snippet>
