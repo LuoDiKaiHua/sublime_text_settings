@@ -57,7 +57,7 @@ class SqlRunCommand(sublime_plugin.WindowCommand):
                         stdout=subprocess.PIPE,
                         stderr=subprocess.PIPE,
                         cwd=working_dir,
-                        shell=True,
+                        shell=False,
                     )
                     self.killed = False
 
