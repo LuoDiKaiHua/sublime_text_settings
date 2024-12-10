@@ -12,12 +12,12 @@
 	"draw_centered": false,
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
-	"font_face": "NotoSansM Nerd Font Mono",
+	"font_face": "NotoSansM NFM",
 	"font_options": [
 		"directwrite",
 		"no_italic",
 	],
-	"font_size": 12,
+	"font_size": 10,
 	"highlight_line": false,
 	"highlight_line_number": true,
 	"highlight_modified_tabs": true,
@@ -55,7 +55,4 @@
 	],
 	"translate_tabs_to_spaces": true,
 	"mdpopups.use_sublime_highlighter": false,
-	"windows": {
-		"font_face": "NotoSansM NFM",
-	},
 }
