@@ -185,6 +185,24 @@
         "keys": [
             "shift+alt+r"
         ],
+        "command": "lsp_code_actions",
+        "args": {
+            "only_kinds": [
+                "refactor"
+            ]
+        },
+        "context": [
+            {
+                "key": "lsp.session_with_capability",
+                "operator": "equal",
+                "operand": "codeActionProvider.codeActionKinds"
+            }
+        ]
+    },
+    {
+        "keys": [
+            "f2"
+        ],
         "command": "lsp_symbol_rename",
         "context": [
             {
