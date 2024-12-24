@@ -17,7 +17,6 @@
 		"directwrite",
 		"no_italic",
 	],
-	"font_size": 10,
 	"highlight_line": false,
 	"highlight_line_number": true,
 	"highlight_modified_tabs": true,
