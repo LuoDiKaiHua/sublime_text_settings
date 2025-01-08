@@ -354,6 +354,26 @@
         "keys": [
             "primary+d"
         ],
+        "command": "lsp_expand_selection",
+        "context": [
+            {
+                "key": "lsp.session_with_capability",
+                "operator": "equal",
+                "operand": "selectionRangeProvider"
+            }
+        ]
+    },
+    {
+        "keys": [
+            "primary+d"
+        ],
         "command": "expand_region",
+        "context": [
+            {
+                "key": "lsp.session_with_capability",
+                "operator": "not_equal",
+                "operand": "selectionRangeProvider"
+            }
+        ]
     },
 ]
