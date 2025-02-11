@@ -1,4 +1,5 @@
 {
     "font_size": 10,
-    "font_face": "NotoSansM NFM",
+    // "font_face": "NotoSansM NFM",
+    "font_face": "RecMonoCasual Nerd Font Mono"
 }
