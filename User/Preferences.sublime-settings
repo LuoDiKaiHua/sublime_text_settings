@@ -9,6 +9,7 @@
 	"caret_style": "smooth",
 	"color_scheme": "auto",
 	"default_line_ending": "unix",
+	"disable_plugin_host_3.3": true,
 	"draw_centered": false,
 	"enable_tab_scrolling": false,
 	"ensure_newline_at_eof_on_save": true,
