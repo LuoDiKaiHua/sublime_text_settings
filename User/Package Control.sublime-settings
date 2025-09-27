@@ -21,7 +21,6 @@
 		"HexViewer",
 		"kotlin-sublime-package",
 		"LSP",
-		"LSP-autohotkey2",
 		"LSP-bash",
 		"LSP-clangd",
 		"LSP-cmake",
@@ -63,6 +62,5 @@
 	[
 		"https://github.com/sublimelsp/LSP-cmake",
 		"https://github.com/LuoDiKaiHua/kotlin-sublime-package",
-		"https://github.com/LuoDiKaiHua/LSP-autohotkey2"
 	],
 }
