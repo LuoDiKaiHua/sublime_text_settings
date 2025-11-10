@@ -40,6 +40,7 @@
 	"match_brackets_braces": false,
 	"match_brackets_content": false,
 	"match_tags": false,
+	"mdpopups.use_sublime_highlighter": false,
 	"mini_diff": "auto",
 	"rulers": [],
 	"ruler_style": "stippled",
@@ -56,5 +57,4 @@
 		"directwrite"
 	],
 	"translate_tabs_to_spaces": true,
-	"mdpopups.use_sublime_highlighter": false,
 }
