@@ -13,7 +13,9 @@
 	"disable_plugin_host_3.3": true,
 	"draw_centered": false,
 	"enable_tab_scrolling": false,
-	"ensure_newline_at_eof_on_save": true,
+	"ensure_newline_at_eof_on_save": false,
+	"font_face": "Maple Mono NF CN",
+	"font_size": 10,
 	"font_options": [
 		"directwrite",
 		"no_italic",
