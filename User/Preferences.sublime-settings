@@ -8,6 +8,8 @@
 	"caret_extra_bottom": 1,
 	"caret_style": "smooth",
 	"color_scheme": "auto",
+	"light_color_scheme": "Catppuccin Latte.sublime-color-scheme",
+	"dark_color_scheme": "Catppuccin Mocha.sublime-color-scheme",
 	"default_line_ending": "unix",
 	"default_font_size": 10,
 	"disable_plugin_host_3.3": true,

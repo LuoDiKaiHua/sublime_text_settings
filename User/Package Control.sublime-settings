@@ -5,9 +5,9 @@
 	],
 	"installed_packages":
 	[
-		"A File Icon",
 		"BracketHighlighter",
 		"Case Conversion",
+		"Catppuccin color schemes",
 		"CMake",
 		"Codec",
 		"Dartlight",
