@@ -20,7 +20,7 @@
 	"font_size": 10,
 	"font_options": [
 		"directwrite",
-		"no_italic",
+		// "no_italic",
 	],
 	"highlight_line": false,
 	"highlight_line_number": true,
